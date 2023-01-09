@@ -1,0 +1,35 @@
+.item_good,
+.item_neutral,
+.item_bad,
+.item_total {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+.item_good::before,
+.item_neutral::before,
+.item_bad::before,
+.item_total::before {
+  content: '';
+  height: 15px;
+  width: 15px;
+  display: block;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.item_good::before {
+  background-color: limegreen;
+}
+.item_neutral::before {
+  background-color: rgb(255, 166, 134);
+}
+.item_bad::before {
+  background-color: crimson;
+}
+.item_total::before {
+  background-color: aqua;
+}
+.item_total {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
